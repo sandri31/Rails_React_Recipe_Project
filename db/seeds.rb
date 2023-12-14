@@ -1,9 +1,10 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# frozen_string_literal: true
+
+9.times do |i|
+  Recipe.create(
+    name: "Recipe #{i + 1}",
+    ingredients: 'Pot de 227 g de crème caillée, 25 g de beurre, 1 cuillère à café de maïzena, 100 g de parmesan, muscade râpée, 250 g de fettuccine ou tagliatelles fraîches, ciboulette ciselée ou persil haché pour servir (facultatif)',
+    instruction: 'Dans une casserole moyenne, mélanger la crème caillée, le beurre et la maïzena à feu doux et laisser mijoter. Éteignez le feu et gardez au chaud.'
+  )
+end
+puts '9 recipes created'
