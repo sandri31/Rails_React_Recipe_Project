@@ -1,0 +1,18 @@
+databases:
+  - name: rails_react_recipe
+    databaseName: rails_react_recipe_production
+    user: florent
+
+services:
+  - type: web
+    name: rails_react_recipe
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: rails_react_recipe
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
