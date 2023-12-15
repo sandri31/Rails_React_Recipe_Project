@@ -223,9 +223,9 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   pg
-  puma (>= 5.0)
+  puma
   rails (~> 7.1.2)
-  redis (>= 4.0.1)
+  redis
   sprockets-rails
   stimulus-rails
   turbo-rails

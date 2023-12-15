@@ -24,10 +24,10 @@ gem "jbuilder"
 ##-- Gems for Database --##
 gem 'pg'
 # Use Redis adapter to run Action Cable in production
-gem "redis", ">= 4.0.1"
+gem "redis"
 
 ##--- Server & Infrastructure Configuration ---##
-gem "puma", ">= 5.0"
+gem "puma"
 
 ##-- Platform Specific Gems --##
 gem "tzinfo-data", platforms: %i[ windows jruby ]
