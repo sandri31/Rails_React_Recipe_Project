@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: rails_react_recipe_production
   username: rails_react_recipe
   password: <%= ENV["RAILS_REACT_RECIPE_DATABASE_PASSWORD"] %>
