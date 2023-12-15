@@ -11,10 +11,18 @@ export default () => (
         </p>
         <hr className="my-4" />
         <Link
-          to="/recipes"
-          className="btn btn-lg custom-button"
-          role="button"
-        >
+        to="/recipes"
+        className="btn btn-lg custom-button"
+        role="button"
+        style={{
+          color: "white",
+          border: "none",
+          boxShadow: "0px 0px 12px rgba(0, 0, 0, 0.2)",
+          transition: "transform 0.3s ease-in-out"
+        }}
+        onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.1)"}
+        onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
+      >
           Voir les recettes
         </Link>
       </div>

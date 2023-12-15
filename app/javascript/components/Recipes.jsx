@@ -45,20 +45,20 @@ const Recipes = () => {
 
   return (
     <>
-      <section className="jumbotron jumbotron-fluid text-center">
+      <section className="jumbotron jumbotron-fluid text-center bg-light">
         <div className="container py-5">
           <h1 className="display-4">Recettes pour tous les goûts</h1>
           <p className="lead text-muted">
-          Nous avons rassemblé nos recettes les plus populaires, nos dernières
-          ajouts et choix de notre éditeur, donc il y aura sûrement quelque chose
-          c'est tentant pour vous d'essayer.
+            Nous avons rassemblé nos recettes les plus populaires, nos dernières
+            ajouts et choix de notre éditeur, donc il y aura sûrement quelque chose
+            c'est tentant pour vous d'essayer.
           </p>
         </div>
       </section>
-      <div className="py-5">
+      <div className="py-5 bg-white">
         <main className="container">
           <div className="text-end mb-3">
-            <Link to="/recipe" className="btn custom-button">
+            <Link to="/recipe" className="btn btn-primary custom-button">
               Créer une nouvelle recette
             </Link>
           </div>
