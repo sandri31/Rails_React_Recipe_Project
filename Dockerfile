@@ -30,6 +30,9 @@ RUN curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz
     npm install -g yarn@$YARN_VERSION && \
     rm -rf /tmp/node-build-master
 
+# Install Sass globally
+RUN yarn global add sass
+
 # Install application gems
 COPY Gemfile Gemfile.lock ./
 RUN bundle install && \
