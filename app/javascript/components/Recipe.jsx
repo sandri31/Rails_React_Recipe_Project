@@ -63,7 +63,7 @@ const Recipe = () => {
             </ul>
           </div>
           <div className="col-sm-12 col-lg-7">
-            <h5 className="mb-2">Preparation Instructions</h5>
+            <h5 className="mb-2">Instructions de préparation</h5>
             <div
               dangerouslySetInnerHTML={{
                 __html: `${recipeInstruction}`,
@@ -75,12 +75,12 @@ const Recipe = () => {
               type="button"
               className="btn btn-danger"
             >
-              Delete Recipe
+              Supprimer
             </button>
           </div>
         </div>
         <Link to="/recipes" className="btn btn-link">
-          Back to recipes
+          Retour aux recettes
         </Link>
       </div>
     </div>
