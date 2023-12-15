@@ -66,7 +66,7 @@ const Recipes = () => {
             {recipes.length > 0 ? allRecipes : noRecipe}
           </div>
           <Link to="/" className="btn btn-link">
-            Home
+            Retour à la page d'accueil
           </Link>
         </main>
       </div>
